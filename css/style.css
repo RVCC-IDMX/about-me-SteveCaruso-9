@@ -1,3 +1,29 @@
 body {
-    background-color:rgb(255, 0, 0);
+    background-color: #fff;
+    color: #222433;
+    font-family:Outfit;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:"Jacquard 24";
+    font-size: 45pt;
+}
+
+header{
+    text-align:center;
+}
+
+#hero,footer{
+    background-color:#2db57b;
+    text-align:center;
+    padding:10px;
+    border: 5px solid #a04535;
+}
+
+#hero img{
+    width:300px;
+}
+
+#bio{
+    text-align:center;
 }
