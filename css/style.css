@@ -27,3 +27,14 @@ header{
 #bio{
     text-align:center;
 }
+
+/* Hobbies List */
+#hobbies ul li {
+    color:red;
+}
+#hobbies ul li:nth-child(3n-1) {
+    color:green;
+}
+#hobbies ul li:nth-child(3n) {
+    color:blue;
+}
