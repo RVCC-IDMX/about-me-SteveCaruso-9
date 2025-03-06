@@ -61,6 +61,24 @@ header{
     text-align:center;
 }
 
+/* Article */
+article p::first-letter {
+    color:rgb(123, 123, 255);
+    background-color:rgb(14, 14, 111);
+    font-family:"Jacquard 24";
+    float:left;
+    border:5px double white;
+    border-radius:10px;
+    padding:.2ex;
+    font-size:500%;
+    margin-right:.5ex;
+    text-shadow:1px 1px yellow;
+}
+article p {
+    max-width:100%;
+    columns: 20rem;
+}
+
 
 @media screen and (min-width: 60em) {
     
