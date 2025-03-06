@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid & Flex</title>
+</head>
+
+<body>
+
+    <header>
+        <div>LOGO</div>
+        <div><!-- spacer --></div>
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </header>
+    <nav>
+        <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+            <li>Link 4</li>
+        </ul>
+    </nav>
+    <main>
+        <p>It's cold, but it's beautiful. We might as well make some Almighty mountains today as well, what the heck.
+            They say everything looks better with odd numbers of things. But sometimes I put even numbers—just to upset
+            the critics.</p>
+
+        <p>If you've been in Alaska less than a year you're a Cheechako. Let's build an almighty mountain. Only God can
+            make a tree - but you can paint one. We'll lay all these little funky little things in there. Now let's put
+            some happy little clouds in here.</p>
+
+        <p>We'll play with clouds today. Tree trunks grow however makes them happy. If you don't like it - change it.
+            It's your world. Steve wants reflections, so let's give him reflections. I'm sort of a softy, I couldn't
+            shoot Bambi except with a camera.</p>
+
+        <p>You're meant to have fun in life. Let your imagination be your guide. The light is your friend. Preserve it.
+            Once you learn the technique, ohhh! Turn you loose on the world; you become a tiger. Be so very light. Be a
+            gentle whisper. And right there you got an almighty cloud.</p>
+
+        <p>The very fact that you're aware of suffering is enough reason to be overjoyed that you're alive and can
+            experience it. This present moment is perfect simply due to the fact you're experiencing it. This is a
+            fantastic little painting.</p>
+
+        <p>A tree needs to be your friend if you're going to paint him. We must be quiet, soft and gentle. Look around,
+            look at what we have. Beauty is everywhere, you only have to look to see it. But they're very easily killed.
+            Clouds are delicate. You can work and carry-on and put lots of little happy things in here.</p>
+
+        <p>As trees get older they lose their chlorophyll. Have fun with it. All those little son of a guns. Very easy
+            to work these to death.</p>
+    </main>
+    <footer>Footer</footer>
+
+    <style>
+        * {
+        }
+        body {
+            display:grid;
+            grid-template-columns: 25% auto;
+            grid-template-rows: 100px auto auto;
+            grid-template-areas: 
+                "header header"
+                "nav    main"
+                "footer footer"
+            ;
+        }
+        header {
+            background-color:rgb(255, 138, 138);
+            grid-area: header;
+            display:flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            justify-content:space-evenly;
+            align-items:flex-baseline;
+        }
+        header > div {
+            border:1px solid black;
+            padding:20px;
+        }
+        header div:nth-child(2) {
+            flex-grow:3;
+        }
+        nav {
+            background-color: rgb(255, 250, 163);
+            grid-area: nav;
+        }
+        main {
+            background-color:rgb(144, 144, 255);
+            grid-area: main;
+        }
+        footer {
+            background-color:rgb(255, 147, 255);
+            grid-area: footer;
+        }
+
+        @media screen and (max-width:500px) {
+
+            body {
+                grid-template-areas: 
+                    "header header"
+                    "nav    nav"
+                    "main   main"
+                    "footer footer"
+                ;
+            }
+
+            nav ul {
+                display:flex;
+                flex-direction:row;
+                justify-content:space-between;
+            }
+            nav li {
+                list-style: none;
+                padding:0;
+                margin:0;
+            }
+
+        }
+
+        @media print {
+            * {
+                border:none !important;
+            }
+        }
+
+    </style>
+
+</body>
+
+</html>

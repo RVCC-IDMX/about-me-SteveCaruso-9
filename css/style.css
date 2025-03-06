@@ -26,10 +26,23 @@ header{
 }
 
 #bio{
-    text-align:center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+#bio h2 {
+    margin:.5ex;
 }
 
 /* Hobbies List */
+#hobbies {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+#hobbies h2 {
+    margin:.5ex;
+}
 #hobbies ul li {
     color:red;
 }
@@ -46,4 +59,20 @@ header{
 }
 #gallery figure {
     text-align:center;
+}
+
+
+@media screen and (min-width: 60em) {
+    
+    figure {
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    figcaption {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+    }
+
 }
