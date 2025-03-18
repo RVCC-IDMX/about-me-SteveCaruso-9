@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Media</title>
+</head>
+
+<body>
+
+    <h1>Embedded Media</h1>
+    <h2>&lt;audio&gt;</h2>
+
+    <audio controls muted src="audio/t-rex-roar.mp3"></audio>
+
+    <h2>&lt;video&gt;</h2>
+
+    <video autoplay controls src="video/flower.webm"></video>
+
+    <style>
+        video {
+            display:block;
+            max-width:100%;
+            margin-left:auto;
+            margin-right:auto;
+        }
+    </style>
+
+    <h2>&lt;iframe&gt;</h2>
+
+    <div id="video">
+    <iframe 
+        width="560" height="315" 
+        src="https://www.youtube.com/embed/jVs-DLWHVjI?si=b-yi6ZOC_S9ELvai"
+        title="YouTube video player" 
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" 
+        ></iframe>
+    </div>
+
+        <style>
+            #video {
+               max-width:100%;
+               width:600px;
+               margin-left:auto;
+               margin-right:auto;
+            }
+            iframe {
+                height:100%;
+                width:100%;
+                aspect-ratio: 1.7777;
+            }
+        </style>
+
+</body>
+
+</html>
